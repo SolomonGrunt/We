@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+            type="text/javascript">
+    </script>
+    <title>Registration form</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="register-form-container">
+            <form action="">
+                <h1 class="form-title">
+                    Registration form
+                </h1>
+                <div class="form-fields">
+                    <div class="form-field">
+                        <input type="text" placeholder="name" required pattern="^[a-zA-Z]+$"
+                            title="The name can contain only letters.">
+                    </div>
+                    <div class="form-field">
+                        <label>
+                            <input type="email" placeholder="e-mail" required>
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label>
+                            <input type="password" placeholder="password" required minlength="6" maxlength="128">
+                        </label>
+                    </div>
+                    <div class="form-field">
+                        <label>
+                            <input type="text" placeholder="city-name" required minlength="6" maxlength="128">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="button">Registration</button>
+                    <div class="divider">or</div>
+                    <a href="?= $uri ?" class="button button-google">Google</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
